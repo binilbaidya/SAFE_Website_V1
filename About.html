@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords"
+    content="safe, architect, architecture, engineering, Engineers, consultancy, consulting, Space Alternatives For Environment, Architecture & Engineering, Private Company, Patan, Nepal, Lalitpur">
+  <meta name="description"
+    content="SAFE (Space Alternatives For Environment) Consulting Architects & Engineers is a consultancy firm established for helping people in various fields of Architectural Engineering, Environmental and socio-economic services, project planning and management, techno-economic engineering, administration and management.">
+  <meta name="robots" content="index, follow">
+  <meta name="revisit-after" content="2 month">
+  <!-- Architect, Engineer, SAFE -->
+  <title>About | SAFE Consulting Architects & Engineers</title>
+  <!-- Title Bar Logo -->
+  <link rel="shortcut icon" type="image/PNG" href="./img/SiteLogo.PNG">
+  <!-- CSS scripts(External Scripts) -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/transition.css">
+  <!-- CSS scripts(Internal Scripts) -->
+  <style media="screen">
+    li,
+    button {
+      cursor: pointer;
+    }
+  </style>
+  <script src="./js/jquery-3.3.1.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $.ajax({
+        type: "GET",
+        url: "./xml/about.xml",
+        dataType: "xml",
+        success: xmlParser
+      });
+    });
+
+    function xmlParser(xml) {
+      $(xml).find("about-us").each(function () {
+        $("#about-text").append(
+          '<p class="info" style="text-align: justify;">' +
+          $(this).find("p1").text() +
+          '<br><br>' + $(
+            this).find("p2").text() + '<br><br>' + $(this).find("p3").text() +
+          '<br></p>');
+        $('.info').hide();
+      });
+
+      $(xml).find("team").each(function () {
+        $(".row").append(
+          '<div class="col-md-4"><p class="info2 text-left text-capitalize">' +
+          $(this).find("name").text() +
+          '</p></div><br class="info2">');
+        $('.info2').hide();
+      });
+
+      $(xml).find("expert").each(function () {
+        $(".row1").append(
+          '<div class="col-md-4"><p class="info2 text-left text-capitalize">' +
+          $(this).find("name").text() +
+          '</p></div><br class="info2">');
+        $('.info2').hide();
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Header with website name and nav bar -->
+  <div class="header">
+    <header>
+      <div id="branding">
+        <a href="index.html"><img src="./img/SafeLogo.png" alt="Logo" class="Safe" /></a>
+      </div>
+      <img id="three" src="./img/three.png" alt="menu icon" />
+      <!-- Hidden at all times. -->
+      <nav>
+        <!-- Canvas used only for small width devices -->
+        <canvas id="myCanvas">
+          Your browser does not support the HTML5 canvas tag.
+          <!-- Shows this message if the browser does not support canvas. -->
+        </canvas>
+        <!-- Navigation bar items kept as lists -->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <!-- transition class given in order to give some effect when clicking the link. -->
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="#" class="current">About</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <!-- Loading Page -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
+  <!--About-->
+  <div class="About">
+    <div class="bg4">
+      <div class="wrapper">
+        <article id="main">
+          <div class="shadow">
+            <h1> About Us </h1>
+            <div id="about-text">
+            </div>
+          </div>
+        </article>
+
+        <aside id="side">
+          <div class="shadow">
+            <h2> Our Team Members </h2>
+            <div class="container">
+              <br class="info2">
+              <h1 class="info2" style="font-family: Dance;">Architect / Planner / Interior </h1><br class="info2">
+              <div class="row">
+              </div>
+            </div>
+            <br class="info2">
+            <h1 class="info2" style="font-family: Dance">Resource Consultants / Experts</h1><br class="info2">
+            <div class="row1">
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>SAFE, Copyright &copy; 2019</p>
+  </footer>
+
+  <!-- JavaScripts/jQuerys -->
+  <!-- Main jQuery required for the usability of other jQuerys -->
+  <script src="./js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="./js/canvas.js" charset="utf-8"></script>
+  <!-- For the icon when width of the device is small -->
+  <script src="./js/hide.js" charset="utf-8"></script>
+  <script src="./js/Transition.js"></script>
+</body>
+
+</html>

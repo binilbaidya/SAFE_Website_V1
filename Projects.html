@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta name="keywords"
+    content="safe, architect, architecture, engineering, Engineers, consultancy, consulting, Space Alternatives For Environment, Architecture & Engineering, Private Company, Patan, Nepal, Lalitpur">
+  <meta name="description"
+    content="SAFE (Space Alternatives For Environment) Consulting Architects & Engineers is a consultancy firm established for helping people in various fields of Architectural Engineering, Environmental and socio-economic services, project planning and management, techno-economic engineering, administration and management.">
+  <meta name="robots" content="index, follow">
+  <meta name="revisit-after" content="2 month">
+  <!-- Architect, Engineer, SAFE -->
+  <title>Projects | SAFE Consulting Architects & Engineers</title>
+  <!-- Title Bar Logo -->
+  <link rel="shortcut icon" type="image/PNG" href="./img/SiteLogo.PNG">
+  <!-- CSS scripts(External Scripts) -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/transition.css">
+  <!-- CSS scripts(Internal Scripts) -->
+  <style media="screen">
+    li,
+    button,
+    .shadow1 {
+      cursor: pointer;
+    }
+
+    .info3 p {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .swiper-button-prev,
+    .swiper-container-rtl .swiper-button-next {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%2337E1C0'%2F%3E%3C%2Fsvg%3E");
+    }
+
+    .swiper-button-next,
+    .swiper-container-rtl .swiper-button-prev {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%2337E1C0'%2F%3E%3C%2Fsvg%3E");
+    }
+  </style>
+  <script src="./js/jquery-3.3.1.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $.ajax({
+        type: "GET",
+        url: "./xml/Projects.xml",
+        dataType: "xml",
+        success: xmlParser
+      });
+    });
+
+    function xmlParser(xml) {
+      $(xml).find("details").each(function () {
+        $(".0").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details1").each(function () {
+        $(".1").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details2").each(function () {
+        $(".2").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details3").each(function () {
+        $(".3").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details4").each(function () {
+        $(".4").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details5").each(function () {
+        $(".5").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details6").each(function () {
+        $(".6").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details7").each(function () {
+        $(".7").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details8").each(function () {
+        $(".8").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details9").each(function () {
+        $(".9").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details10").each(function () {
+        $(".10").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details11").each(function () {
+        $(".11").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details12").each(function () {
+        $(".12").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details13").each(function () {
+        $(".13").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details14").each(function () {
+        $(".14").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details15").each(function () {
+        $(".15").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details16").each(function () {
+        $(".16").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details17").each(function () {
+        $(".17").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details18").each(function () {
+        $(".18").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details19").each(function () {
+        $(".19").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details20").each(function () {
+        $(".20").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details21").each(function () {
+        $(".21").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details22").each(function () {
+        $(".22").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details23").each(function () {
+        $(".23").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details24").each(function () {
+        $(".24").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details25").each(function () {
+        $(".25").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details26").each(function () {
+        $(".26").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details27").each(function () {
+        $(".27").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details28").each(function () {
+        $(".28").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details29").each(function () {
+        $(".39").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details30").each(function () {
+        $(".30").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details31").each(function () {
+        $(".31").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details32").each(function () {
+        $(".32").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details33").each(function () {
+        $(".33").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details34").each(function () {
+        $(".34").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details35").each(function () {
+        $(".35").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details36").each(function () {
+        $(".36").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details37").each(function () {
+        $(".37").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details38").each(function () {
+        $(".38").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details39").each(function () {
+        $(".39").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details40").each(function () {
+        $(".40").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details41").each(function () {
+        $(".41").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details42").each(function () {
+        $(".42").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details43").each(function () {
+        $(".43").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details44").each(function () {
+        $(".44").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details45").each(function () {
+        $(".45").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details46").each(function () {
+        $(".46").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details47").each(function () {
+        $(".47").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details48").each(function () {
+        $(".48").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details49").each(function () {
+        $(".49").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details50").each(function () {
+        $(".50").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details51").each(function () {
+        $(".51").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details52").each(function () {
+        $(".52").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details53").each(function () {
+        $(".53").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details54").each(function () {
+        $(".54").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details55").each(function () {
+        $(".55").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details56").each(function () {
+        $(".56").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details57").each(function () {
+        $(".57").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details58").each(function () {
+        $(".58").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details59").each(function () {
+        $(".59").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details60").each(function () {
+        $(".60").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details61").each(function () {
+        $(".61").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details62").each(function () {
+        $(".62").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details63").each(function () {
+        $(".63").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details64").each(function () {
+        $(".64").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details65").each(function () {
+        $(".65").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details66").each(function () {
+        $(".66").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details67").each(function () {
+        $(".67").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details68").each(function () {
+        $(".68").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details69").each(function () {
+        $(".69").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details70").each(function () {
+        $(".70").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details71").each(function () {
+        $(".71").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details72").each(function () {
+        $(".72").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details73").each(function () {
+        $(".73").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details74").each(function () {
+        $(".74").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details75").each(function () {
+        $(".75").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details76").each(function () {
+        $(".76").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details77").each(function () {
+        $(".77").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details78").each(function () {
+        $(".78").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details79").each(function () {
+        $(".79").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details80").each(function () {
+        $(".80").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details81").each(function () {
+        $(".81").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details82").each(function () {
+        $(".82").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details83").each(function () {
+        $(".83").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details84").each(function () {
+        $(".84").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details85").each(function () {
+        $(".85").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details86").each(function () {
+        $(".86").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details87").each(function () {
+        $(".87").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details88").each(function () {
+        $(".88").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details89").each(function () {
+        $(".89").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details90").each(function () {
+        $(".90").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+      $(xml).find("details91").each(function () {
+        $(".91").append('<div class="imgBx"><img src="./img/' + $(this).find("image").text() +
+          '" alt="' + $(this).find("image").text() +
+          '" ></div><div class="details"><h2 class="page-header" style="font-family: Acme; padding-top: 15px; text-decoration: underline;">' +
+          $(this).find("Project").text() +
+          '</h2><br><div class="info3 text-left"><h3 class="page-header"><small style="font-family: Acme;">' + $(
+            this).find("Name").text() + '</small></h3><p> Owner/Clients: ' + $(this).find("Owner").text() +
+          '</p> <p> Scope of Works: ' + $(this).find("Scope").text() + '</p> <p> Status: ' + $(this).find(
+            "Status").text() + '</p></div></div>');
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Header with website name and nav bar -->
+  <div class="header">
+    <header>
+      <div id="branding">
+        <a href="index.html"><img src="./img/SafeLogo.png" alt="Logo" class="Safe" /></a>
+      </div>
+      <img id="three" src="./img/three.png" alt="menu icon" />
+      <!-- Hidden at all times. -->
+      <nav>
+        <!-- Canvas used only for small width devices -->
+        <canvas id="myCanvas">
+          Your browser does not support the HTML5 canvas tag.
+          <!-- Shows this message if the browser does not support canvas. -->
+        </canvas>
+        <!-- Navigation bar items kept as lists -->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <!-- transition class given in order to give some effect when clicking the link. -->
+          <li><a href="#" class="current">Projects</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <!-- Loading Page -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
+  <!-- Works -->
+  <div class="Works">
+    <div class="bg3">
+      <div class="wrapper3" align="center">
+        <h1 style="font-family: Dance; text-align: center; margin-top: 20px; margin-bottom: 40px;">Projects Done</h1>
+        <div class="shadow1 institution">
+          <h1 style="color: black; font-family: Dance; font-size: 1.8em; padding: 25px;"> Institutional Building </h1>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="62"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="63"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="64"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="65"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="66"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="67"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="68"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="69"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="70"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="71"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="72"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="73"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="74"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="75"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="76"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="77"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="78"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="79"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="80"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="81"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="82"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="83"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="84"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="85"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="86"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="87"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="88"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="89"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="90"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="91"></div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="shadow1 residential">
+          <h1 style="color: black; font-family: Dance; font-size: 1.8em; padding: 25px;"> Residential Building </h1>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="1"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="2"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="3"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="4"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="5"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="6"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="7"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="8"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="9"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="10"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="11"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="12"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="13"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="14"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="15"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="16"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="17"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="18"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="19"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="20"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="21"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="22"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="23"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="24"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="25"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="26"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="27"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="28"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="29"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="30"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="31"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="32"></div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="shadow1 interior">
+          <h1 style="color: black; font-family: Dance; font-size: 1.8em; padding: 25px;"> Interior Design
+          </h1>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="33"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="34"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="35"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="36"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="37"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="38"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="39"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="40"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="41"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="42"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="43"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="44"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="45"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="46"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="47"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="48"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="49"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="50"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="51"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="52"></div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="shadow1 apartment">
+          <h1 style="color: black; font-family: Dance; font-size: 1.8em; padding: 25px;"> Apartment Building </h1>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="53"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="54"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="55"></div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="shadow1 industry">
+          <h1 style="color: black; font-family: Dance; font-size: 1.8em; padding: 25px;"> Industrial Building </h1>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="0"></div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="shadow1 miscellaneous">
+          <h1 style="color: black; font-family: Dance; font-size: 1.8em; padding: 25px;"> Miscellaneous Works
+          </h1>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="56"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="57"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="58"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="59"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="60"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="61"></div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>SAFE, Copyright &copy; 2019</p>
+  </footer>
+
+  <!-- JavaScripts/jQuerys -->
+  <script src="./js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="./js/canvas.js" charset="utf-8"></script>
+  <!-- For the icon when width of the device is small -->
+  <script src="./js/Transition.js" charset="utf-8"></script>
+  <script src="./js/hide.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 55,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        spaceBetween: 30,
+        freemode: true,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: 'true',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+
+</html>
